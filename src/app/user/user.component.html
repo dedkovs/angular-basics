@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-body">
+    <div>
+      <h5 class="card-title">ID: {{ id + 1 }}</h5>
+      <p class="card-text m-0"><b>Name:</b> {{ user.name | titlecase }}</p>
+      <p *ngIf="user.age" class="card-text m-0"><b>Age:</b> {{ user.age }}</p>
+      <p class="card-text m-0"><b>Email:</b> {{ user.email | lowercase }}</p>
+    </div>
+    <div class="card-createdAt">
+      <small
+        ><i>Created: {{ user.createdAt | date: "medium" }}</i></small
+      >
+      <button
+        (click)="onDeleteUser(id)"
+        class="btn btn-outline-primary btn-sm mt-3"
+        style="width: 80px"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+</div>

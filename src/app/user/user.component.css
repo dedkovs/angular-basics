@@ -1,0 +1,16 @@
+.card {
+  width: 275px;
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-createdAt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
